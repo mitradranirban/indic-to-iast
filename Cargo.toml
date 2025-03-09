@@ -1,0 +1,19 @@
+[package]
+name = "indic-to-iast"
+version = "0.1.0"
+edition = "2021"
+description = "A WebAssembly library for transliterating Indic scripts to IAST Roman"
+repository = "https://github.com/mitradranirban/indic-to-iast"
+license = "GPL3"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.84"
+js-sys = "0.3.61"
+web-sys = { version = "0.3.61", features = ["console"] }
+
+[profile.release]
+lto = true
+opt-level = 3

@@ -1,0 +1,13 @@
+{
+  "name": "indic-to-iast-web",
+  "version": "1.0.0",
+  "description": "Web interface for Indic to IAST transliteration",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server -o"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
